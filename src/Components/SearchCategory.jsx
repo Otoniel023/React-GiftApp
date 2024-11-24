@@ -28,7 +28,7 @@ export const SearchCategory = ({setNewCategorie}) => {
             <ButtonUI text={"Add category"} />
             <br />
             <input type="text"
-                placeholder={"Search category, example: Dragon Ball"}
+                placeholder={"example: Dragon Ball"}
                 value={categoriesSearch}
                 onChange={handlerSearchCategory}
             />
