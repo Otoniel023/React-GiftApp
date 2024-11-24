@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { ButtonUI } from "./ButtonUI";
 //Componente
 export const SearchCategory = ({setNewCategorie}) => {
     //UseState
@@ -23,8 +24,9 @@ export const SearchCategory = ({setNewCategorie}) => {
     return (
         <div>
             <h1>GiftExpertApp</h1>
-
             <form onSubmit={OnSaveCategory}>
+            <ButtonUI text={"Add category"} />
+            <br />
             <input type="text"
                 placeholder={"Search category, example: Dragon Ball"}
                 value={categoriesSearch}
